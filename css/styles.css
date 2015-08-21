@@ -1,0 +1,61 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	margin:0;
+	padding:0;
+	background:url(../img/cubes.png);}
+
+*{
+	margin:0;
+	padding:0;
+	font-size:14px;
+	}
+
+a:link{
+	text-decoration:none;
+	color:rgba(0,0,0,1);
+}
+
+a:visited{
+	text-decoration:none;
+	color:rgba(0,0,0,1);
+}
+
+div.container{
+	width:1100px;
+	margin:0 auto;
+}
+
+div.buttonsHeader{
+    height: 100px;
+    width: 100%;
+    background:rgb(180,10,100);
+}
+
+div.buttonsHeader div{
+    width: 100px;
+    height: 100px;
+    background: rgb(150,150,150);
+    position: relative;
+    float: left;
+    margin-right: 1px;
+    /*
+    border-bottom: solid 2px rgb(0,0,0);
+    border-top: solid 2px rgb(0,0,0);
+    border-right: solid 2px rgb(0,0,0);
+    */
+}
+
+div.buttonsHeader div.logoSpace{
+    width: 400px;
+    height: 100px;
+    background-color: rgb(200,160,10);
+    font-size: 30px;
+    font-weight: bold;
+    border: none;
+}
+
+body div div+div{
+    background: rgba(220,220,220);
+}
