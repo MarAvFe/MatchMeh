@@ -29,47 +29,146 @@ div.container{
 }
 
 /************ Starts header styles **************/
+
 header{
     height: 80px;
     width: 100%;
     background:rgba(100,100,100,1);
 }
 
-header div{
+header ul{
+    height: 80px;
+    width: 100%;
+    background:rgba(100,100,100,1);
+}
+
+header li{
     width: 80px;
     height: 80px;
-    background: rgba(100,200,100,0);
     position: relative;
     float: left;
     margin-right: 5px;
+    background-image: url(../img/icons.png);
+    list-style: none;
 }
 
-header div.logoSpace{
+header li span{
+	color:#FFE2AD;
+	text-align:center;
+	display:block;
+    padding: 5px 0 0 0;
+	font-size:14px;
+	font-family:"museo_slab500", "Book Antiqua", Palatino, serif;
+}
+
+header li:hover{
+    width: 78px;
+    height: 78px;
+    border: solid 1px rgb(0,128,128);
+}
+
+header li:hover span{
+    position: relative;
+    bottom: 1px;
+    color: white;
+}
+header li[class=logoSpace] span{
+    color:#FFE2AD;
+	text-align:left;
+    padding: 20px 0 0 0;
+	font-size:38px;
+    bottom:0;
+	font-family:"museo_slab500", "Book Antiqua", Palatino, serif;
+    transition: all ease 100ms;
+}
+
+header li.logoSpace{
     width: 400px;
     height: 80px;
-    background-color: rgb(200,160,10);
-    font-size: 30px;
+    background: url(../img/logo.png) no-repeat 230px 0;
+    font-size: 50px;
     font-weight: bold;
     border: none;
     margin:0 20px;
 }
 
-header div.divider{
+header li.logoSpace:hover{
+    background: url(../img/logo.png) no-repeat 230px -80px;
+}
+
+header li.separator{
     width: 1px;
     height: 90%;
     background: black;
     margin: 3px 10px;
 }
 
-header div.profile{
-    background-image: "./";
+header li.home{
+    background-position: -98px -5px;
+}
+
+header li.home:hover{
+    background-position: -99px -485px;
+}
+
+header li.messages{
+    background-position: -98px -282px;
+}
+
+header li.messages:hover{
+    background-position: -99px -762px;
+}
+
+header li.search{
+    background-position: -184px -369px;
+}
+
+header li.search:hover{
+    background-position:-185px -849px;
+}
+
+header li.location{
+    background-position: -270px -185px;
+}
+
+header li.location:hover{
+    background-position: -271px -665px;
+}
+
+header li.history{
+    background-position: -443px -279px;
+}
+
+header li.history:hover{
+    background-position: -444px -759px;
+}
+
+header li.separator{
+    border:none;
+}
+
+header li.profile{
+    background-position: -358px -277px;
+}
+
+header li.profile:hover{
+    background-position:-359px -757px;
+}
+
+
+header li.options{
+    background-position: -527px 1px;
+}
+
+header li.options:hover{
+    background-position:-528px -479px;
 }
 
 
 /************** Starts mainContent styles **************/
 .mainContent{
     border:solid 4px black;
-    margin:400px 0;
+    margin:20px 0;
 }
 
 
@@ -113,5 +212,7 @@ footer div.whiteBelt{
 footer div.bottomBelt{
     height: 20px;
     background-color: gray;
+    text-align: right;
+    margin:0;
 }
 
