@@ -34,6 +34,7 @@ header{
     height: 80px;
     width: 100%;
     background:rgba(100,100,100,1);
+    margin-bottom: 10px;
 }
 
 header ul{
@@ -72,6 +73,7 @@ header li:hover span{
     bottom: 1px;
     color: white;
 }
+
 header li[class=logoSpace] span{
     color:#FFE2AD;
 	text-align:left;
@@ -94,6 +96,7 @@ header li.logoSpace{
 
 header li.logoSpace:hover{
     background: url(../img/logo.png) no-repeat 230px -80px;
+    cursor: pointer;
 }
 
 header li.separator{
@@ -155,7 +158,6 @@ header li.profile:hover{
     background-position:-359px -757px;
 }
 
-
 header li.options{
     background-position: -527px 1px;
 }
@@ -167,10 +169,8 @@ header li.options:hover{
 
 /************** Starts mainContent styles **************/
 .mainContent{
-    border:solid 4px black;
-    margin:20px 0;
+    height: 1000px;
 }
-
 
 /************** Starts footer styles **************/
 
@@ -181,6 +181,7 @@ footer{
     border-right:solid 2px black;
     border-bottom:solid 2px black;
 }
+
 footer p{
     margin:0 20px;
 }
@@ -206,6 +207,7 @@ footer div.copyright{
 
 footer div.whiteBelt{
     height: 15px;
+    width: 100%;
     background-color: white;
 }
 
@@ -215,4 +217,3 @@ footer div.bottomBelt{
     text-align: right;
     margin:0;
 }
-
